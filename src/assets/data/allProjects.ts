@@ -1,4 +1,4 @@
-import productSwap from "../projects/productSwap.png";
+import productApp from "../projects/productApp.png";
 import wordle from "../projects/wordle.png";
 import todo from "../projects/todo.png";
 import todoTs from "../projects/todoTs.png";
@@ -8,7 +8,7 @@ export const allProjects = [
     title: "Product exchange App",
     description: `A site for listing unwanted items, or gaining an item on offer from another user. The frontend is built with react.js utilizing hooks and redux, the backend is built with node express.js. The database used is Postgres Elephant (SQL), allowing for the user, role and product tables to be related. User authentication managed with Firebase.
         The application has three levels of user roles: unregistered user (view only), registered user (add and manage items, contact other users) and site administrator (monitor and delete all product entries and users). The different access/ views allowed for each level are protected.`,
-    image: productSwap,
+    image: productApp,
     liveUrl: "https://gumtree-swap.netlify.app/",
     githubUrl: {
       frontend: "https://github.com/dorian-rose/product-swap-front",
