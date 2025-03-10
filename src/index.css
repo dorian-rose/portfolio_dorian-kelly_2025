@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #133955;
+  --secondary: #6c757d;
+  --secondary-light: #f9f9f9;
+  --secondary-medium: #dbdbdb;
+  --white: white;
+  --black: #2b2a29;
+  --contrast: #5c8e95;
+}
+
+@layer base {
+  body {
+    @apply antialiased bg-secondary-light text-black dark:bg-primary dark:text-white transition-colors duration-300;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold text-primary dark:text-white;
+  }
+}
+
+@layer components {
+  .nav-link {
+    @apply font-medium text-primary dark:text-secondary-light hover:text-secondary dark:hover:text-secondary-medium transition-colors duration-300;
+  }
+
+  .nav-link-mobile {
+    @apply block py-2 px-4 font-medium text-primary dark:text-secondary-light hover:text-secondary dark:hover:text-secondary-medium hover:bg-secondary-light dark:hover:bg-primary rounded-md transition-colors duration-300;
+  }
+
+  .section-container {
+    @apply container mx-auto px-4 py-16;
+  }
+
+  .card {
+    @apply bg-white dark:bg-primary shadow-md rounded-lg overflow-hidden transition-all duration-300;
+  }
+
+  .btn-primary {
+    @apply bg-primary hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply border border-primary text-primary dark:border-secondary-light dark:text-secondary-light hover:bg-primary hover:text-white dark:hover:bg-secondary-light dark:hover:text-primary font-medium py-2 px-6 rounded-md transition-colors duration-300;
+  }
+
+  .tech-item {
+    @apply flex flex-col items-center p-4;
+  }
+
+  .tech-icon {
+    @apply w-16 h-16 flex items-center justify-center mb-3 bg-white dark:bg-primary rounded-lg shadow-md;
+  }
+}

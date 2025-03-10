@@ -1,0 +1,7 @@
+export * from "./CopySvg"
+export * from "./EmailSvg"
+export * from "./FooterEmailSvg"
+export * from "./GithubSvg"
+export * from "./LinkedinSvg"
+export * from "./PinSvg"
+export * from "./TelSvg"
