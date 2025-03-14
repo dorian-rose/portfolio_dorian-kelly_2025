@@ -1,67 +1,11 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Award } from "lucide-react";
+import { Briefcase, GraduationCap, Earth } from "lucide-react";
 import { experience } from "../assets/data/experience";
 import { education } from "../assets/data/education";
 import dorian from "../assets/dorian.png";
 
 const About: React.FC = () => {
-  // const education = [
-  //   {
-  //     degree: "Master of Computer Science",
-  //     institution: "Stanford University",
-  //     period: "2018 - 2020",
-  //     description:
-  //       "Specialized in Software Engineering and Artificial Intelligence. Graduated with honors.",
-  //   },
-  //   {
-  //     degree: "Bachelor of Science in Computer Science",
-  //     institution: "University of California, Berkeley",
-  //     period: "2014 - 2018",
-  //     description:
-  //       "Focused on web development and database systems. Participated in multiple hackathons.",
-  //   },
-  // ];
-
-  // const experience = [
-  //   {
-  //     position: "Senior Full Stack Developer",
-  //     company: "Tech Innovations Inc.",
-  //     period: "2021 - Present",
-  //     description:
-  //       "Lead developer for multiple web applications using the MERN stack. Implemented CI/CD pipelines and mentored junior developers.",
-  //     achievements: [
-  //       "Reduced application load time by 40% through code optimization",
-  //       "Implemented microservices architecture that improved scalability",
-  //       "Led a team of 5 developers to deliver projects on time and within budget",
-  //     ],
-  //   },
-  //   {
-  //     position: "Full Stack Developer",
-  //     company: "Digital Solutions LLC",
-  //     period: "2018 - 2021",
-  //     description:
-  //       "Developed and maintained web applications for clients in various industries. Worked with React, Node.js, and MongoDB.",
-  //     achievements: [
-  //       "Built an e-commerce platform that increased client sales by 25%",
-  //       "Implemented responsive designs that improved mobile user engagement by 35%",
-  //       "Integrated payment gateways and third-party APIs for enhanced functionality",
-  //     ],
-  //   },
-  //   {
-  //     position: "Web Development Intern",
-  //     company: "StartUp Ventures",
-  //     period: "2017 - 2018",
-  //     description:
-  //       "Assisted in the development of web applications and learned industry best practices.",
-  //     achievements: [
-  //       "Contributed to the front-end development of a social media dashboard",
-  //       "Learned and implemented responsive design principles",
-  //       "Participated in code reviews and agile development processes",
-  //     ],
-  //   },
-  // ];
-
   return (
     <div className="py-16">
       <div className="container mx-auto px-4">
@@ -114,6 +58,51 @@ const About: React.FC = () => {
                 together.
               </p>
             </div>
+          </div>
+        </motion.section>
+
+        {/* Language Section */}
+        <motion.section
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <h2 className="text-2xl font-bold mb-8 flex items-center">
+            <Earth className="mr-2" /> Languages
+          </h2>
+          <div className="flex flex-col sm:flex-row items-center gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0 * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full"
+            >
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold">Spanish</h3>
+                  <p className="text-contrast dark:text-contrast">
+                    Full fluency
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0 * 0.1 }}
+              viewport={{ once: true }}
+              className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md w-full"
+            >
+              <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+                <div>
+                  <h3 className="text-xl font-semibold">English</h3>
+                  <p className="text-contrast dark:text-contrast">Native</p>
+                </div>
+              </div>
+            </motion.div>
           </div>
         </motion.section>
 
